@@ -1,374 +1,372 @@
-<head>
-    <style>
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-        .box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            gap: 10px;
-        }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+    }
 
-        .box-item {
-            flex-grow: 1;
-            text-align: center;
-            background-color: #f5f5f5;
-            padding: 20px;
-        }
+    .box-item {
+        flex-grow: 1;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
 
-        h1 {
-            text-align: center;
-        }
+    h1 {
+        text-align: center;
+    }
 
-        h2 {
-            margin-bottom: 10px;
-        }
+    h2 {
+        margin-bottom: 10px;
+    }
 
-        button {
-            display: inline-block;
-            border: 1px solid #21a2ff;
-            padding: 15px 40px;
-            margin-top: 15px;
-            text-decoration: none !important;
-            font-family: "Source Sans Pro", sans-serif;
-            color: #21a2ff;
-            transition: 0.7s;
-        }
+    button {
+        display: inline-block;
+        border: 1px solid #21a2ff;
+        padding: 15px 40px;
+        margin-top: 15px;
+        text-decoration: none !important;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #21a2ff;
+        transition: 0.7s;
+    }
 
-        button:hover {
-            background: #21a2ff;
-            color: rgb(255, 255, 255);
-        }
+    button:hover {
+        background: #21a2ff;
+        color: rgb(255, 255, 255);
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
 
-        .page-id-6529 main#main {
-            padding: 0;
-            max-width: 100%;
-        }
+    .page-id-6529 main#main {
+        padding: 0;
+        max-width: 100%;
+    }
 
-        .page-id-6529 header.entry-header {
-            display: none;
-        }
+    .page-id-6529 header.entry-header {
+        display: none;
+    }
 
+    .sliderPrincipale {
+        width: 100%;
+        height: 670px;
+        background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2023/03/sfondo-scaled.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sliderPrincipale h1 {
+        color: white;
+        text-shadow: 0px 0px 8px rgb(0 0 0 / 80%);
+        font-size: 60px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 900;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 20px;
+    }
+
+    .container .textEmissioni p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .container .textEmissioni {
+        margin-bottom: 35px;
+        padding: 20px;
+    }
+
+    .boxLaunch {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .container .titleLaunch {
+        width: 50%;
+        float: left;
+    }
+
+    .container .titleLaunch h3 {
+        font-size: 120px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        line-height: 140px;
+        color: #333333;
+    }
+
+    .textLaunch {
+        width: 50%;
+        float: left;
+    }
+
+    .textLaunch p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .textLaunch a {
+        border: 1px solid #e9a406;
+        padding: 15px 40px;
+        text-decoration: none !important;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #e9a406;
+        transition: 0.7s;
+    }
+
+    .textLaunch a:hover {
+        background: #e9a406;
+        color: black;
+    }
+
+    .bannerSmart {
+        width: 100%;
+        height: 500px;
+        background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2023/03/internivan.png);
+        background-position: 30% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: block !important;
+    }
+
+    .sectionDomani {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .sectionDomani img {
+        width: 60%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
+    .sectionDomani>video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sectionDomani .boxImgDomani {
+        padding: 60px;
+        width: 100%;
+    }
+
+    .sectionDomani .boxImgDomani h4 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 54px;
+        color: #333333;
+    }
+
+    .sectionDomani .boxImgDomani p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .sectionDomani .boxImgDomani a {
+        display: inline-block;
+        border: 1px solid #21a2ff;
+        padding: 15px 40px;
+        margin-top: 15px;
+        text-decoration: none !important;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #21a2ff;
+        transition: 0.7s;
+    }
+
+    .sectionDomani .boxImgDomani a:hover {
+        background: #21a2ff;
+        color: rgb(255, 255, 255);
+    }
+
+    .sectionAssistenza h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .sectionAssistenza p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Source Sans Pro", sans-serif;
+        margin-top: 10px !important;
+    }
+
+    div.contattiLaunch {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    div.contattiLaunch .boxEmail,
+    div.contattiLaunch .boxTelefono {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.contattiLaunch .boxEmail img,
+    div.contattiLaunch .boxTelefono img {
+        width: auto;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    div.contattiLaunch .boxEmail a,
+    div.contattiLaunch .boxTelefono a {
+        margin-top: 0px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+
+    a#contattiLaunch {
+        position: relative;
+        top: -150px;
+    }
+
+    #imgDomani-2 {
+        padding: 60px 60px 0px 0px;
+    }
+
+    @media screen and (max-width: 576px) {
         .sliderPrincipale {
-            width: 100%;
-            height: 670px;
-            background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2023/03/sfondo-scaled.jpeg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            height: 470px;
+        }
+
+        #section-domani {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column-reverse;
         }
 
         .sliderPrincipale h1 {
-            color: white;
-            text-shadow: 0px 0px 8px rgb(0 0 0 / 80%);
-            font-size: 60px;
-            font-family: "Source Sans Pro", sans-serif;
-            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+            padding: 0 20px;
+            line-height: 50px;
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
-
-        .container .textEmissioni p {
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        .container .textEmissioni {
-            margin-bottom: 35px;
-            padding: 20px;
+            max-width: 100%;
+            padding: 0px 20px 20px 20px;
         }
 
         .boxLaunch {
             display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-direction: column;
         }
 
         .container .titleLaunch {
-            width: 50%;
-            float: left;
+            width: 100%;
+            float: none;
         }
 
         .container .titleLaunch h3 {
-            font-size: 120px;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 800;
-            line-height: 140px;
-            color: #333333;
+            font-size: 40px;
+            line-height: 50px;
         }
 
         .textLaunch {
-            width: 50%;
-            float: left;
-        }
-
-        .textLaunch p {
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 16px;
-            line-height: 25px;
-        }
-
-        .textLaunch a {
-            border: 1px solid #e9a406;
-            padding: 15px 40px;
-            text-decoration: none !important;
-            font-family: "Source Sans Pro", sans-serif;
-            color: #e9a406;
-            transition: 0.7s;
-        }
-
-        .textLaunch a:hover {
-            background: #e9a406;
-            color: black;
+            width: 100%;
+            float: none;
+            margin-top: 15px;
         }
 
         .bannerSmart {
-            width: 100%;
-            height: 500px;
-            background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2023/03/internivan.png);
-            background-position: 30% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            display: block !important;
+            background-attachment: inherit !important;
         }
 
         .sectionDomani {
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-direction: column;
         }
 
         .sectionDomani img {
-            width: 60%;
-            object-fit: cover;
-            aspect-ratio: 1/1;
+            width: 100%;
         }
 
-        .sectionDomani>video {
+        .sectionDomani video {
             width: 100%;
-            object-fit: cover;
         }
 
         .sectionDomani .boxImgDomani {
-            padding: 60px;
-            width: 100%;
+            padding: 40px 0 0px 0px;
         }
 
         .sectionDomani .boxImgDomani h4 {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 800;
-            font-size: 46px;
-            line-height: 54px;
-            color: #333333;
-        }
-
-        .sectionDomani .boxImgDomani p {
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 16px;
-            line-height: 25px;
-        }
-
-        .sectionDomani .boxImgDomani a {
-            display: inline-block;
-            border: 1px solid #21a2ff;
-            padding: 15px 40px;
-            margin-top: 15px;
-            text-decoration: none !important;
-            font-family: "Source Sans Pro", sans-serif;
-            color: #21a2ff;
-            transition: 0.7s;
-        }
-
-        .sectionDomani .boxImgDomani a:hover {
-            background: #21a2ff;
-            color: rgb(255, 255, 255);
+            font-size: 30px;
+            line-height: 38px;
         }
 
         .sectionAssistenza h4 {
-            font-family: "Montserrat", sans-serif;
-            font-size: 32px;
-            line-height: 36px;
+            font-size: 24px;
+            line-height: 30px;
         }
 
-        .sectionAssistenza p {
-            font-size: 16px;
-            line-height: 24px;
-            font-family: "Source Sans Pro", sans-serif;
-            margin-top: 10px !important;
+        .sectionAssistenza {
+            padding: 40px;
         }
 
         div.contattiLaunch {
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-
-        div.contattiLaunch .boxEmail,
-        div.contattiLaunch .boxTelefono {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
         }
 
-        div.contattiLaunch .boxEmail img,
-        div.contattiLaunch .boxTelefono img {
-            width: auto;
-            height: 60px;
-            margin: 0 auto;
+        div.contattiLaunch .boxEmail {
+            margin-bottom: 30px;
         }
 
-        div.contattiLaunch .boxEmail a,
-        div.contattiLaunch .boxTelefono a {
-            margin-top: 0px;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 20px;
-            line-height: 24px;
-            font-weight: normal;
+        .box-item {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+        .sliderPrincipale h1 {
+            padding: 0 20px;
+            text-align: center;
+            line-height: 65px;
         }
 
-        a#contattiLaunch {
-            position: relative;
-            top: -150px;
+        .container .titleLaunch h3 {
+            font-size: 80px;
+            line-height: 95px;
         }
 
-        #imgDomani-2 {
-            padding: 60px 60px 0px 0px;
+        .sectionDomani .boxImgDomani {
+            padding: 0 10px 0 40px;
         }
-
-        @media screen and (max-width: 576px) {
-            .sliderPrincipale {
-                height: 470px;
-            }
-
-            #section-domani {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-
-            .sliderPrincipale h1 {
-                font-size: 40px;
-                text-align: center;
-                padding: 0 20px;
-                line-height: 50px;
-            }
-
-            .container {
-                max-width: 100%;
-                padding: 0px 20px 20px 20px;
-            }
-
-            .boxLaunch {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .container .titleLaunch {
-                width: 100%;
-                float: none;
-            }
-
-            .container .titleLaunch h3 {
-                font-size: 40px;
-                line-height: 50px;
-            }
-
-            .textLaunch {
-                width: 100%;
-                float: none;
-                margin-top: 15px;
-            }
-
-            .bannerSmart {
-                background-attachment: inherit !important;
-            }
-
-            .sectionDomani {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .sectionDomani img {
-                width: 100%;
-            }
-
-            .sectionDomani video {
-                width: 100%;
-            }
-
-            .sectionDomani .boxImgDomani {
-                padding: 40px 0 0px 0px;
-            }
-
-            .sectionDomani .boxImgDomani h4 {
-                font-size: 30px;
-                line-height: 38px;
-            }
-
-            .sectionAssistenza h4 {
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            .sectionAssistenza {
-                padding: 40px;
-            }
-
-            div.contattiLaunch {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            div.contattiLaunch .boxEmail {
-                margin-bottom: 30px;
-            }
-
-            .box-item {
-                width: 100%;
-            }
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-            .sliderPrincipale h1 {
-                padding: 0 20px;
-                text-align: center;
-                line-height: 65px;
-            }
-
-            .container .titleLaunch h3 {
-                font-size: 80px;
-                line-height: 95px;
-            }
-
-            .sectionDomani .boxImgDomani {
-                padding: 0 10px 0 40px;
-            }
-        }
-    </style>
-</head>
+    }
+</style>
 
 <div class="sliderPrincipale">
     <h1 class="titleSliderPrincipale">Scopri la Gamma Van di Mercedes-Benz</h1>
