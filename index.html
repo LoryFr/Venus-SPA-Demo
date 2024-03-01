@@ -208,6 +208,27 @@
     .description .button p {
         padding: 0 16px 0 0;
     }
+    .reason {
+        padding: 10px;
+        color: white;
+    }
+    .reason .row {
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+    }
+    .reason .item {
+        flex: 1;
+        border-radius: 20px;
+        overflow: hidden!important;
+    }
+    .reason .item:nth-child(1) {
+        display: flex;
+    }
+    .reason .item img {
+        object-fit: cover;
+        width: 100%;
+    }
 </style>
 <main>
     <section class="hero">
@@ -296,5 +317,18 @@
             <div class="image" style="align-self: center;"><img src="https://source.unsplash.com/9nrPNX1QWEM" alt=""></div>
         </div>
     </section>
-    <section class="reason"></section>
+    <section class="reason">
+        <div class="row">
+            <div class="item"><img src="https://source.unsplash.com/vdg14E8KsVM" alt=""></div>
+            <div class="item" style="background: var(--main-color); display: flex; flex-direction: column; justify-content: center;">
+                <div class="text" style="display: flex; flex-direction: column; gap: 32px; padding: 80px; justify-content: center;">
+                    <div class="top" style="display: flex; flex-direction: column; gap: 16px;">
+                        <h3 class="roboto-bold" style="font-size: 20px; letter-spacing: 3px; color: #CCCCCC; text-transform: uppercase;">Perchè Sceglierci</h3>
+                        <h2 class="roboto-black" style="font-size: 56px; line-height: 110%;">Titolo</h2>
+                    </div>
+                    <p class="roboto-regular" style="font-size: 18px; line-height: 160%;">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
