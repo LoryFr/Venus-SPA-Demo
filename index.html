@@ -1,6 +1,13 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
 <style>
+    #main {
+        max-width: 1440px;
+        padding: 0;
+        margin: auto;
+    }
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
     .roboto-thin {
         font-family: "Roboto", sans-serif;
         font-weight: 100;
@@ -76,10 +83,9 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-    }
-    main {
         --main-color: #0F172A;
-
+    }
+    main.gamma-2024-landing {
         max-width: 1440px;
         margin: auto;
         color: var(--main-color);
@@ -87,7 +93,7 @@
         flex-direction: column;
         gap: 10px;
     }
-    .hero {
+    .gamma-2024-landing .hero {
         padding: 80px;
         display: flex;
         justify-content: space-between;
@@ -95,50 +101,50 @@
         height: 600px;
         width: 100%;
     }
-    .hero .text {
+    .gamma-2024-landing .hero .text {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
-    .hero .text .top {
+    .gamma-2024-landing .hero .text .top {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
-    .hero .text .buttons {
+    .gamma-2024-landing .hero .text .buttons {
         display: flex;
         gap: 16px;
     }
-    .hero .text .buttons .cta-button {
+    .gamma-2024-landing .hero .text .buttons .cta-button {
         display: flex;
         padding: 16px;
     }
-    .hero .text .buttons .cta-button:nth-child(1) {
+    .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(1) {
         border-radius: 10px;
         background: var(--main-color);
     }
-    .hero .text .buttons .cta-button:nth-child(2) {
+    .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(2) {
         padding: 16px 8px;
     }
-    .hero .text .buttons .cta-button .text {
+    .gamma-2024-landing .hero .text .buttons .cta-button .text {
         display: flex;
         padding: 0 16px;
     }
-    .hero .text .buttons .cta-button .text:nth-child(2) {
+    .gamma-2024-landing .hero .text .buttons .cta-button .text:nth-child(2) {
         display: flex;
         padding: 0 8px;
     }
-    .hero .images .image {
+    .gamma-2024-landing .hero .images .image {
         background-color: black;
         border-radius: 20px;
         overflow: hidden!important;
     }
-    .hero .images .image img {
+    .gamma-2024-landing .hero .images .image img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
-    .cards {
+    .gamma-2024-landing .cards {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -146,7 +152,7 @@
         justify-content: center;
         align-items: center;
     }
-    .cards .row .box {
+    .gamma-2024-landing .cards .row .box {
         position: relative;
         width: 100%;
         height: 354px;
@@ -155,7 +161,7 @@
         overflow: hidden!important;
         color: white;
     }
-    .cards .row .box .text {
+    .gamma-2024-landing .cards .row .box .text {
         position: absolute;
         top: 0;
         left: 0;
@@ -166,94 +172,90 @@
         padding: 24px 24px 64px 24px;
         background: linear-gradient(180deg, rgba(15,23,42,0.49761911600577735) 0%, rgba(15,23,42,0) 100%);
     }
-    .cards .row .box img {
+    .gamma-2024-landing .cards .row .box img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
-    .description {
+    .gamma-2024-landing .description {
         display: flex;
         gap: 80px;
         padding: 80px;
         align-items: center;
     }
-    .description .gallery {
+    .gamma-2024-landing .description .gallery {
         display: flex;
         gap: 16px;
         width: 600px;
         height: 464px;
     }
-    .description .gallery .image {
+    .gamma-2024-landing .description .gallery .image {
         flex: 1;
         width: 100%;
         border-radius: 20px;
         height: 384px;
         overflow: hidden!important;
     }
-    .description .gallery .image img {
+    .gamma-2024-landing .description .gallery .image img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
-    .description .text {
+    .gamma-2024-landing .description .text {
         width: 600px;
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
-    .description .button {
+    .gamma-2024-landing .description .button {
         display: flex;
         padding: 12px 0;
+        width: fit-content;
+        height: fit-content;
     }
-    .description .button p {
-        padding: 0 16px 0 0;
+    .fa-arrow-right {
+        padding: 0 16px;
     }
-    .reason {
+    .gamma-2024-landing .reason {
         padding: 10px;
         color: white;
     }
-    .reason .row {
+    .gamma-2024-landing .reason .row {
         display: flex;
         gap: 10px;
         height: fit-content;
     }
-    .reason .item {
+    .gamma-2024-landing .reason .item {
         flex: 1;
         border-radius: 20px;
         overflow: hidden!important;
     }
-    .reason .item:nth-child(1) {
+    .gamma-2024-landing .reason .item:nth-child(1) {
         display: flex;
     }
-    .reason .item img {
+    .gamma-2024-landing .reason .item img {
         object-fit: cover;
         width: 100%;
     }
 </style>
-<main>
+<main class="gamma-2024-landing">
     <section class="hero">
         <div class="text">
             <div class="top">
-                <h1 class="roboto-black" style="font-size: 72px; line-height: 110%;">Gamma 2024</h1>
-                <h2 class="roboto-bold" style="font-size: 56px; line-height: 110%;">Veicoli Commerciali</h2>
+                <h1 class="roboto-black" style="font-size: 72px; line-height: 110%; color: var(--main-color);">Gamma 2024</h1>
+                <h2 class="roboto-bold" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Veicoli Commerciali</h2>
             </div>
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; max-width: 500px;">sceglici perche noi abbiamo i furgoni piu belli di tutti che fanno brum brum</p>
             <div class="buttons">
                 <div class="cta-button">
                     <div class="text">
-                        <p class="roboto-medium" style="color: white; font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo</p>
-                    </div>
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.586 11.157L11.636 7.207C11.4538 7.0184 11.353 6.7658 11.3553 6.5036C11.3576 6.2414 11.4628 5.99059 11.6482 5.80518C11.8336 5.61978 12.0844 5.51461 12.3466 5.51233C12.6088 5.51005 12.8614 5.61084 13.05 5.793L18.707 11.45C18.8002 11.5427 18.8741 11.6528 18.9246 11.7741C18.9751 11.8955 19.001 12.0256 19.001 12.157C19.001 12.2884 18.9751 12.4185 18.9246 12.5399C18.8741 12.6612 18.8002 12.7713 18.707 12.864L13.05 18.521C12.9578 18.6165 12.8474 18.6927 12.7254 18.7451C12.6034 18.7975 12.4722 18.8251 12.3394 18.8263C12.2066 18.8274 12.0749 18.8021 11.952 18.7518C11.8291 18.7015 11.7175 18.6273 11.6236 18.5334C11.5297 18.4395 11.4555 18.3279 11.4052 18.205C11.3549 18.0821 11.3296 17.9504 11.3307 17.8176C11.3319 17.6848 11.3595 17.5536 11.4119 17.4316C11.4643 17.3096 11.5405 17.1993 11.636 17.107L15.586 13.157H6C5.73478 13.157 5.48043 13.0516 5.29289 12.8641C5.10536 12.6766 5 12.4222 5 12.157C5 11.8918 5.10536 11.6374 5.29289 11.4499C5.48043 11.2624 5.73478 11.157 6 11.157H15.586Z" fill="white"/>
-                    </svg>                        
+                        <p class="roboto-medium" style="color: white; font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                    </div>                       
                 </div>
                 <div class="cta-button">
                     <div class="text">
-                        <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Perchè Sceglierci</p>
-                    </div>
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.586 11.157L11.636 7.207C11.4538 7.0184 11.353 6.7658 11.3553 6.5036C11.3576 6.2414 11.4628 5.99059 11.6482 5.80518C11.8336 5.61978 12.0844 5.51461 12.3466 5.51233C12.6088 5.51005 12.8614 5.61084 13.05 5.793L18.707 11.45C18.8002 11.5427 18.8741 11.6528 18.9246 11.7741C18.9751 11.8955 19.001 12.0256 19.001 12.157C19.001 12.2884 18.9751 12.4185 18.9246 12.5399C18.8741 12.6612 18.8002 12.7713 18.707 12.864L13.05 18.521C12.9578 18.6165 12.8474 18.6927 12.7254 18.7451C12.6034 18.7975 12.4722 18.8251 12.3394 18.8263C12.2066 18.8274 12.0749 18.8021 11.952 18.7518C11.8291 18.7015 11.7175 18.6273 11.6236 18.5334C11.5297 18.4395 11.4555 18.3279 11.4052 18.205C11.3549 18.0821 11.3296 17.9504 11.3307 17.8176C11.3319 17.6848 11.3595 17.5536 11.4119 17.4316C11.4643 17.3096 11.5405 17.1993 11.636 17.107L15.586 13.157H6C5.73478 13.157 5.48043 13.0516 5.29289 12.8641C5.10536 12.6766 5 12.4222 5 12.157C5 11.8918 5.10536 11.6374 5.29289 11.4499C5.48043 11.2624 5.73478 11.157 6 11.157H15.586Z" fill="var(--main-color)"/>
-                    </svg>                        
+                        <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Perchè Sceglierci<i class="fa-solid fa-arrow-right"></i></p>
+                    </div>                      
                 </div>
             </div>
         </div>
@@ -262,25 +264,22 @@
                 <div class="image" style="width: 310px; height: 210px;"><img src="https://source.unsplash.com/U4w7y0lowL8" alt=""></div>
                 <div class="image" style="width: 175px; height: 135px;"><img src="https://source.unsplash.com/GRV4ypBKgxE" alt=""></div>
             </div>
-            <div class="image" style="width: 310px; height: 210;">><img src="https://source.unsplash.com/dv5AYX3cYMw" alt=""></div>
+            <div class="image" style="width: 310px; height: 210px;">><img src="https://source.unsplash.com/dv5AYX3cYMw" alt=""></div>
         </div>
     </section>
     <section class="cards">
         <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
-            <h3 class="roboto-bold" style="font-size: 40px; line-height: 110%;">Scopri la Gamma</h3>
+            <h3 class="roboto-bold" style="font-size: 40px; line-height: 110%; color: var(--main-color);">Scopri la Gamma</h3>
             <div class="button" style="display: flex; padding: 12px 0;">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px; padding: 0 16px;">Richiedi un Preventivo</p>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.586 11.157L11.636 7.207C11.4538 7.0184 11.353 6.7658 11.3553 6.5036C11.3576 6.2414 11.4628 5.99059 11.6482 5.80518C11.8336 5.61978 12.0844 5.51461 12.3466 5.51233C12.6088 5.51005 12.8614 5.61084 13.05 5.793L18.707 11.45C18.8002 11.5427 18.8741 11.6528 18.9246 11.7741C18.9751 11.8955 19.001 12.0256 19.001 12.157C19.001 12.2884 18.9751 12.4185 18.9246 12.5399C18.8741 12.6612 18.8002 12.7713 18.707 12.864L13.05 18.521C12.9578 18.6165 12.8474 18.6927 12.7254 18.7451C12.6034 18.7975 12.4722 18.8251 12.3394 18.8263C12.2066 18.8274 12.0749 18.8021 11.952 18.7518C11.8291 18.7015 11.7175 18.6273 11.6236 18.5334C11.5297 18.4395 11.4555 18.3279 11.4052 18.205C11.3549 18.0821 11.3296 17.9504 11.3307 17.8176C11.3319 17.6848 11.3595 17.5536 11.4119 17.4316C11.4643 17.3096 11.5405 17.1993 11.636 17.107L15.586 13.157H6C5.73478 13.157 5.48043 13.0516 5.29289 12.8641C5.10536 12.6766 5 12.4222 5 12.157C5 11.8918 5.10536 11.6374 5.29289 11.4499C5.48043 11.2624 5.73478 11.157 6 11.157H15.586Z" fill="var(--main-color)"/>
-                </svg>
+                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px; padding: 0 16px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
             </div>
         </div>
         <div class="row" style="display: flex; gap: 24px; width: 100%; height: max-content;">
-            <div class="box"><img src="https://source.unsplash.com/kxgHQCY7aBs" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%;">Nome Mezzo</h4></div></div>
-            <div class="box"><img src="https://source.unsplash.com/XP-J5O6A4Ko" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%;">Nome Mezzo</h4></div></div>
-            <div class="box"><img src="https://source.unsplash.com/cvlYUCE4byI" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%;">Nome Mezzo</h4></div></div>
-            <div class="box"><img src="https://source.unsplash.com/WpwN7GsIgCQ" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%;">Nome Mezzo</h4></div></div>
-            <div class="box"><img src="https://source.unsplash.com/CzDNZDO53n0" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%;">Nome Mezzo</h4></div></div>
+            <div class="box"><img src="https://source.unsplash.com/kxgHQCY7aBs" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Nome Mezzo</h4></div></div>
+            <div class="box"><img src="https://source.unsplash.com/XP-J5O6A4Ko" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Nome Mezzo</h4></div></div>
+            <div class="box"><img src="https://source.unsplash.com/cvlYUCE4byI" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Nome Mezzo</h4></div></div>
+            <div class="box"><img src="https://source.unsplash.com/WpwN7GsIgCQ" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Nome Mezzo</h4></div></div>
+            <div class="box"><img src="https://source.unsplash.com/CzDNZDO53n0" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">Categoria</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Nome Mezzo</h4></div></div>
         </div>
     </section>
     <section class="description">
@@ -290,25 +289,19 @@
             <div class="image" style="align-self: center;"><img src="https://source.unsplash.com/9nrPNX1QWEM" alt=""></div>
         </div>
         <div class="text">
-            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%;">Nome del Veicolo</h2>
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Nome del Veicolo</h2>
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
             <div class="button">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Scopri il Modello</p>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.586 11.157L11.636 7.207C11.4538 7.0184 11.353 6.7658 11.3553 6.5036C11.3576 6.2414 11.4628 5.99059 11.6482 5.80518C11.8336 5.61978 12.0844 5.51461 12.3466 5.51233C12.6088 5.51005 12.8614 5.61084 13.05 5.793L18.707 11.45C18.8002 11.5427 18.8741 11.6528 18.9246 11.7741C18.9751 11.8955 19.001 12.0256 19.001 12.157C19.001 12.2884 18.9751 12.4185 18.9246 12.5399C18.8741 12.6612 18.8002 12.7713 18.707 12.864L13.05 18.521C12.9578 18.6165 12.8474 18.6927 12.7254 18.7451C12.6034 18.7975 12.4722 18.8251 12.3394 18.8263C12.2066 18.8274 12.0749 18.8021 11.952 18.7518C11.8291 18.7015 11.7175 18.6273 11.6236 18.5334C11.5297 18.4395 11.4555 18.3279 11.4052 18.205C11.3549 18.0821 11.3296 17.9504 11.3307 17.8176C11.3319 17.6848 11.3595 17.5536 11.4119 17.4316C11.4643 17.3096 11.5405 17.1993 11.636 17.107L15.586 13.157H6C5.73478 13.157 5.48043 13.0516 5.29289 12.8641C5.10536 12.6766 5 12.4222 5 12.157C5 11.8918 5.10536 11.6374 5.29289 11.4499C5.48043 11.2624 5.73478 11.157 6 11.157H15.586Z" fill="var(--main-color)"/>
-                </svg>
+                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Scopri il Modello<i class="fa-solid fa-arrow-right"></i></p>
             </div>
         </div>
     </section>
     <section class="description">
         <div class="text">
-            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%;">Nome del Veicolo</h2>
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Nome del Veicolo</h2>
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
             <div class="button">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Scopri il Modello</p>
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.586 11.157L11.636 7.207C11.4538 7.0184 11.353 6.7658 11.3553 6.5036C11.3576 6.2414 11.4628 5.99059 11.6482 5.80518C11.8336 5.61978 12.0844 5.51461 12.3466 5.51233C12.6088 5.51005 12.8614 5.61084 13.05 5.793L18.707 11.45C18.8002 11.5427 18.8741 11.6528 18.9246 11.7741C18.9751 11.8955 19.001 12.0256 19.001 12.157C19.001 12.2884 18.9751 12.4185 18.9246 12.5399C18.8741 12.6612 18.8002 12.7713 18.707 12.864L13.05 18.521C12.9578 18.6165 12.8474 18.6927 12.7254 18.7451C12.6034 18.7975 12.4722 18.8251 12.3394 18.8263C12.2066 18.8274 12.0749 18.8021 11.952 18.7518C11.8291 18.7015 11.7175 18.6273 11.6236 18.5334C11.5297 18.4395 11.4555 18.3279 11.4052 18.205C11.3549 18.0821 11.3296 17.9504 11.3307 17.8176C11.3319 17.6848 11.3595 17.5536 11.4119 17.4316C11.4643 17.3096 11.5405 17.1993 11.636 17.107L15.586 13.157H6C5.73478 13.157 5.48043 13.0516 5.29289 12.8641C5.10536 12.6766 5 12.4222 5 12.157C5 11.8918 5.10536 11.6374 5.29289 11.4499C5.48043 11.2624 5.73478 11.157 6 11.157H15.586Z" fill="var(--main-color)"/>
-                </svg>
+                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Scopri il Modello<i class="fa-solid fa-arrow-right"></i></p>
             </div>
         </div>
         <div class="gallery">
@@ -324,7 +317,7 @@
                 <div class="text" style="display: flex; flex-direction: column; gap: 32px; padding: 80px; justify-content: center;">
                     <div class="top" style="display: flex; flex-direction: column; gap: 16px;">
                         <h3 class="roboto-bold" style="font-size: 20px; letter-spacing: 3px; color: #CCCCCC; text-transform: uppercase;">Perchè Sceglierci</h3>
-                        <h2 class="roboto-black" style="font-size: 56px; line-height: 110%;">Titolo</h2>
+                        <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: white;">Titolo</h2>
                     </div>
                     <p class="roboto-regular" style="font-size: 18px; line-height: 160%;">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                 </div>
