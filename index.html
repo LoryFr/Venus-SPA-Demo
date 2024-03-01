@@ -84,6 +84,7 @@
         padding: 0;
         margin: 0;
         --main-color: #0F172A;
+        text-decoration: none;
     }
     main.gamma-2024-landing {
         max-width: 1440px;
@@ -237,6 +238,51 @@
         object-fit: cover;
         width: 100%;
     }
+    @media (max-width: 1200px) {
+        .gamma-2024-landing .hero {
+            flex-direction: column-reverse;
+            gap: 80px;
+            height: 100%;
+        }
+        .gamma-2024-landing .cards .row:nth-child(2) {
+            flex-direction: column;
+        }
+        .gamma-2024-landing .description {
+            flex-direction: column;
+        }
+        .gamma-2024-landing .description:nth-child() {
+            flex-direction: column-reverse;
+        }
+        .gamma-2024-landing .reason .row {
+            flex-direction: column-reverse;
+        }
+        .gamma-2024-landing .description .gallery .image {
+            height: 200px;
+        }
+        .gamma-2024-landing .description .gallery {
+            height: 250px;
+        }
+    }
+    @media (max-width: 798px) {
+        .gamma-2024-landing .hero {
+            padding: 30px;
+        }
+        .gamma-2024-landing .cards {
+            padding: 30px;
+        }
+        .gamma-2024-landing .description {
+            padding: 30px;
+        }
+        .gamma-2024-landing .hero .images .image {
+            display: none;
+        }
+        .gamma-2024-landing .description .gallery {
+            width: 100%;
+        }
+        .gamma-2024-landing .description .text {
+            width: 100%;
+        }
+    }
 </style>
 <main class="gamma-2024-landing">
     <section class="hero">
@@ -248,14 +294,14 @@
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; max-width: 500px;">sceglici perche noi abbiamo i furgoni piu belli di tutti che fanno brum brum</p>
             <div class="buttons">
                 <div class="cta-button">
-                    <a href="#form-gamma-2024">
+                    <a class="" href="#form-gamma-2024">
                         <div class="text">
                         <p class="roboto-medium" style="color: white; font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </a>                      
                 </div>
                 <div class="cta-button">
-                    <a href="#reason-why">
+                    <a class="" href="#reason-why">
                         <div class="text">
                             <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Perchè Sceglierci<i class="fa-solid fa-arrow-right"></i></p>
                         </div>
@@ -272,10 +318,12 @@
         </div>
     </section>
     <section class="cards">
-        <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
+        <div class="row" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <h3 class="roboto-bold" style="font-size: 40px; line-height: 110%; color: var(--main-color);">Scopri la Gamma</h3>
             <div class="button" style="display: flex; padding: 12px 0;">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px; padding: 0 16px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                <a class="" href="#form-gamma-2024">
+                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px; padding: 0 16px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                </a>
             </div>
         </div>
         <div class="row" style="display: flex; gap: 24px; width: 100%; height: max-content;">
@@ -296,7 +344,9 @@
             <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Nome del Veicolo</h2>
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
             <div class="button">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                <a class="" href="#form-gamma-2024">
+                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                </a>
             </div>
         </div>
     </section>
@@ -305,7 +355,9 @@
             <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Nome del Veicolo</h2>
             <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
             <div class="button">
-                <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                <a class="" href="#form-gamma-2024">
+                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                </a>
             </div>
         </div>
         <div class="gallery">
