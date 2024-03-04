@@ -1,0 +1,371 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<style>
+    #main {
+        max-width: 1440px;
+        padding: 0;
+        margin: auto;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        --main-color: #0F172A;
+        text-decoration: none;
+    }
+    main.gamma-2024-landing {
+        max-width: 1440px;
+        margin: auto;
+        color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gamma-2024-landing .hero {
+        padding: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 100%;
+        position: relative;
+    }
+    .gamma-2024-landing .hero .background {
+        border-radius: 20px;
+    }
+    .gamma-2024-landing .hero .text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        z-index: 2;
+        color: white;
+    }
+    .gamma-2024-landing .hero .text .top {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .gamma-2024-landing .hero .text .buttons {
+        display: flex;
+    }
+    .gamma-2024-landing .hero .text .buttons .cta-button {
+        display: flex;
+        padding: 16px;
+    }
+    .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(1) {
+        border-radius: 10px;
+        background: white;
+    }
+    .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(2) {
+        padding: 16px 8px;
+    }
+    .gamma-2024-landing .hero .text .buttons .cta-button .text {
+        display: flex;
+        padding: 0 16px;
+    }
+    .gamma-2024-landing .hero .text .buttons .cta-button .text:nth-child(2) {
+        display: flex;
+        padding: 0 8px;
+    }
+    .gamma-2024-landing .hero .images .image {
+        background-color: black;
+        border-radius: 20px;
+        overflow: hidden!important;
+    }
+    .gamma-2024-landing .hero .images .image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .gamma-2024-landing .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .gamma-2024-landing .cards .row .box {
+        position: relative;
+        width: 100%;
+        height: 354px;
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden!important;
+        color: white;
+    }
+    .gamma-2024-landing .cards .row .box .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+        padding: 24px 24px 64px 24px;
+        background: linear-gradient(180deg, rgba(15,23,42,0.49761911600577735) 0%, rgba(15,23,42,0) 100%);
+    }
+    .gamma-2024-landing .cards .row .box img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .gamma-2024-landing .description {
+        display: flex;
+        gap: 80px;
+        padding: 80px;
+        align-items: center;
+    }
+    .gamma-2024-landing .description .gallery {
+        display: flex;
+        gap: 16px;
+        width: 600px;
+        height: 464px;
+    }
+    .gamma-2024-landing .description .gallery .image {
+        flex: 1;
+        width: 100%;
+        border-radius: 20px;
+        height: 384px;
+        overflow: hidden!important;
+    }
+    .gamma-2024-landing .description .gallery .image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .gamma-2024-landing .description .text {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .gamma-2024-landing .description .button {
+        display: flex;
+        padding: 12px 0;
+        width: fit-content;
+        height: fit-content;
+    }
+    .fa-arrow-right {
+        padding: 0 0 0 16px;
+    }
+    .gamma-2024-landing .reason {
+        padding: 10px;
+        color: white;
+    }
+    .gamma-2024-landing .reason .row {
+        display: flex;
+        gap: 10px;
+        height: fit-content;
+    }
+    .gamma-2024-landing .reason .item {
+        flex: 1;
+        border-radius: 20px;
+        overflow: hidden!important;
+    }
+    .gamma-2024-landing .reason .item:nth-child(1) {
+        display: flex;
+    }
+    .gamma-2024-landing .reason .item img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .gamma-2024-landing .reason .text {
+        padding: 80px;
+    }
+    @media (max-width: 1200px) {
+        .gamma-2024-landing .hero {
+            flex-direction: column-reverse;
+            gap: 80px;
+            height: 100%;
+        }
+        .gamma-2024-landing .hero .background {
+            border-radius: 0;
+        }
+        .gamma-2024-landing .hero .text {
+            padding: 80px;
+        }
+        .gamma-2024-landing .cards .row:nth-child(2) {
+            flex-direction: column;
+        }
+        .gamma-2024-landing .description {
+            flex-direction: column;
+        }
+        .gamma-2024-landing .description:nth-child() {
+            flex-direction: column-reverse;
+        }
+        .gamma-2024-landing .reason .row {
+            flex-direction: column-reverse;
+        }
+        .gamma-2024-landing .description .gallery .image {
+            height: 200px;
+        }
+        .gamma-2024-landing .description .gallery {
+            height: 250px;
+        }
+    }
+    @media (max-width: 798px) {
+        .gamma-2024-landing .hero {
+            padding: 30px;
+        }
+        .gamma-2024-landing .cards {
+            padding: 30px;
+        }
+        .gamma-2024-landing .description {
+            padding: 30px;
+        }
+        .gamma-2024-landing .hero .images .image {
+            display: none;
+        }
+        .gamma-2024-landing .description .gallery {
+            width: 100%;
+        }
+        .gamma-2024-landing .description .text {
+            width: 100%;
+        }
+        .gamma-2024-landing .reason .text {
+        padding: 40px 20px;
+        }
+    }
+</style>
+<main class="gamma-2024-landing">
+    <section class="hero">
+        <div class="background" style="position: absolute; width: 100%; height: 100%; top: 0; right: 0; background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/vito-2024-1-scaled.jpg) center center; background-size: cover; z-index: 0; filter: brightness(0.5);"></div>
+        <div class="text">
+            <div class="top">
+                <h1 class="roboto-black" style="font-size: 72px; line-height: 110%; color: white;">Vito 2024</h1>
+                <h2 class="roboto-bold" style="font-size: 56px; line-height: 110%; color: white;">Nuovo Look</h2>
+            </div>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; max-width: 500px;">Mercedes-Benz ha messo mano alla sua gamma mid-size con un restyling molto deciso che ha riguardato sia l’estetica sia, sopratutto, gli interni e le funzionalità del veicolo</p>
+            <div class="buttons">
+                <div class="cta-button">
+                    <a class="" href="#form-gamma-2024">
+                        <div class="text">
+                        <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                        </div>
+                    </a>                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="gallery">
+            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2024-mercedes-benz-v-class-eqv-vito-evito-facelift-debut-36-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2024-mercedes-benz-v-class-eqv-vito-evito-facelift-debut-93-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/4-scaled.jpg" alt=""></div>
+        </div>
+        <div class="text">
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Il tuo compagno di viaggio ideale</h2>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Vito è il furgone che si adatta a tutte le tue esigenze. Scegli tra diverse configurazioni e allestimenti per trovare il Vito perfetto per te. Affidabile, efficiente e versatile, Vito è il tuo compagno di viaggio ideale.</p>
+            <div class="button">
+                <a class="" href="#form-gamma-2024">
+                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="text">
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Affidabilità, efficienza e versatilità al tuo servizio</h2>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Con Vito, il lavoro diventa più facile e piacevole. Grazie ai suoi motori potenti e all'ampio spazio di carico, Vito ti permette di affrontare ogni sfida con la massima efficienza.</p>
+            <div class="button">
+                <a class="" href="#form-gamma-2024">
+                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                </a>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/3-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2024-mercedes-benz-v-class-eqv-vito-evito-facelift-debut-39-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2024-mercedes-benz-v-class-eqv-vito-evito-facelift-debut-96-scaled.jpg" alt=""></div>
+        </div>
+    </section>
+    <section id="form-gamma-2024"></section>
+    <section id="reason-why" class="reason">
+        <div class="row">
+            <div class="item"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/11-scaled.jpg" alt=""></div>
+            <div class="item" style="background: var(--main-color); display: flex; flex-direction: column; justify-content: center;">
+                <div class="text" style="display: flex; flex-direction: column; gap: 32px; justify-content: center;">
+                    <div class="top" style="display: flex; flex-direction: column; gap: 16px;">
+                        <h3 class="roboto-bold" style="font-size: 20px; letter-spacing: 3px; color: #CCCCCC; text-transform: uppercase;">Perchè Sceglierci</h3>
+                        <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: white;">Partner d'Eccellenza</h2>
+                    </div>
+                    <p class="roboto-regular" style="font-size: 18px; line-height: 160%;">Venus è un partner affidabile per la mobilità aziendale, che offre una vasta gamma di servizi e soluzioni personalizzate per soddisfare le esigenze di ogni tipo di business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
