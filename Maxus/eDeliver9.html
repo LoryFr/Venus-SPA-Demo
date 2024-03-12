@@ -97,15 +97,21 @@
     .gamma-2024-landing .hero {
         padding: 80px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 600px;
         width: 100%;
+        position: relative;
+    }
+    .gamma-2024-landing .hero .background {
+        border-radius: 20px;
     }
     .gamma-2024-landing .hero .text {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        z-index: 2;
+        color: white;
     }
     .gamma-2024-landing .hero .text .top {
         display: flex;
@@ -114,7 +120,6 @@
     }
     .gamma-2024-landing .hero .text .buttons {
         display: flex;
-        gap: 16px;
     }
     .gamma-2024-landing .hero .text .buttons .cta-button {
         display: flex;
@@ -122,7 +127,7 @@
     }
     .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(1) {
         border-radius: 10px;
-        background: var(--main-color);
+        background: white;
     }
     .gamma-2024-landing .hero .text .buttons .cta-button:nth-child(2) {
         padding: 16px 8px;
@@ -156,7 +161,6 @@
     .gamma-2024-landing .cards .row .box {
         position: relative;
         width: 100%;
-        min-width: 300px;
         height: 354px;
         flex: 1;
         border-radius: 10px;
@@ -248,6 +252,12 @@
             gap: 80px;
             height: 100%;
         }
+        .gamma-2024-landing .hero .background {
+            border-radius: 0;
+        }
+        .gamma-2024-landing .hero .text {
+            padding: 80px;
+        }
         .gamma-2024-landing .cards .row:nth-child(2) {
             flex-direction: column;
         }
@@ -289,65 +299,40 @@
         .gamma-2024-landing .reason .text {
         padding: 40px 20px;
         }
+        .gamma-2024-landing .hero .text {
+            padding: 30px;
+        }
     }
 </style>
 <main class="gamma-2024-landing">
     <section class="hero">
+        <div class="background" style="position: absolute; width: 100%; height: 100%; top: 0; right: 0; background: url(https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/e-deliver3-nero.jpg) center center; background-size: cover; z-index: 0; filter: brightness(0.5);"></div>
         <div class="text">
             <div class="top">
-                <h1 class="roboto-black" style="font-size: 72px; line-height: 110%; color: var(--main-color);">Maxus 2024</h1>
-                <h2 class="roboto-bold" style="font-size: 56px; line-height: 110%; color: var(--main-color);">TAN 2,99%</h2>
+                <h1 class="roboto-black" style="font-size: 72px; line-height: 110%; color: white;">eDeliver 9</h1>
+                <h2 class="roboto-bold" style="font-size: 56px; line-height: 110%; color: white;">Potenza e autonomia senza compromessi</h2>
             </div>
-            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; max-width: 500px;">Il Van che fa per te... al TAN che fa per te.</p>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; max-width: 500px;">eDeliver 9 è il van elettrico per eccellenza. Con un'autonomia fino a 352 km e un potente motore da 150 kW, eDeliver 9 è la scelta perfetta per chi desidera un van affidabile, efficiente e performante.</p>
             <div class="buttons">
                 <div class="cta-button">
                     <a class="" href="#form-gamma-2024">
                         <div class="text">
-                        <p class="roboto-medium" style="color: white; font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un preventivo<i class="fa-solid fa-arrow-right"></i></p>
+                        <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
                         </div>
                     </a>                      
                 </div>
-                <div class="cta-button">
-                    <a class="" href="#reason-why">
-                        <div class="text">
-                            <p class="roboto-medium" style="color: var(--main-color); font-size: 20px; letter-spacing: 0.5px; line-height: 24px;">Perchè sceglierci<i class="fa-solid fa-arrow-right"></i></p>
-                        </div>
-                    </a>                    
-                </div>
             </div>
-        </div>
-        <div class="images" style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
-            <div class="top" style="display: flex; gap: 16px; align-items: end;">
-                <div class="image" style="width: 310px; height: 210px;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2023-weststar-maxus-edeliver-7-6.jpg" alt=""></div>
-                <div class="image" style="width: 175px; height: 135px;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2023-weststar-maxus-edeliver-3_ext-12.jpg" alt=""></div>
-            </div>
-            <div class="image" style="width: 310px; height: 210px;">><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2023-weststar-maxus-edeliver-7-13.jpg" alt=""></div>
-        </div>
-    </section>
-    <section class="cards">
-        <div class="row" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-            <h3 class="roboto-bold" style="font-size: 40px; line-height: 110%; color: var(--main-color);">Scopri la Gamma</h3>
-            <div class="button" style="display: flex; padding: 12px 0;">
-                <a class="" href="#form-gamma-2024">
-                    <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px; padding: 0 16px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
-                </a>
-            </div>
-        </div>
-        <div class="row" style="display: flex; flex-wrap: wrap; gap: 24px; width: 100%; height: max-content;">
-            <div class="box"><a style="z-index: 99; position: absolute; width: 100%; height: 100%; top: 0; left: 0;" href="https://www.venus-spa.it/veicoli-commerciali-mercedes-benz-ecitan-2024/"></a><img style="margin-top: 0;" src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/maxus-edeliver3-03-jpg.jpg" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">2024</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">eDeliver 3</h4></div></div>
-            <div class="box"><a style="z-index: 99; position: absolute; width: 100%; height: 100%; top: 0; left: 0;" href="https://www.venus-spa.it/veicoli-commerciali-mercedes-benz-sprinter-2024/"></a><img style="margin-top: 0;" src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/maxus-hero-edeliver9.jpg" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">2024</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">eDeliver 9</h4></div></div>
-            <div class="box"><a style="z-index: 99; position: absolute; width: 100%; height: 100%; top: 0; left: 0;" href="https://www.venus-spa.it/veicoli-commerciali-mercedes-benz-esprinter-2-0-2024/"></a><img style="margin-top: 0;" src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/maxus-hero-deliver9.jpg" alt=""><div class="text"><h5 class="roboto-medium" style="font-size: 16px; line-height: 110%; color: white;">2024</h5><h4 class="roboto-bold" style="font-size: 24px; line-height: 110%; color: white;">Deliver 9</h4></div></div>
         </div>
     </section>
     <section class="description">
         <div class="gallery">
-            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/210309_koelliker-edeliver3-431-alta-adobergb-scaled-e1627466459738.jpg" alt=""></div>
-            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/maxus-edeliver3-interni-01.jpg" alt=""></div>
-            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/220221_koelliker-edeliver3_sito.jpg" alt=""></div>
+            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-27.jpg" alt=""></div>
+            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-28-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-9.jpg" alt=""></div>
         </div>
         <div class="text">
-            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Guidare Maxus, conviene.</h2>
-            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Stai cercando un van che sia affidabile, efficiente e conveniente? Allora Maxus è la scelta giusta per te. I nostri van offrono un'ampia gamma di caratteristiche e opzioni per soddisfare le tue esigenze, e il nostro TAN basso ti permette di risparmiare denaro. Inoltre, con la nostra rete di assistenza clienti in tutta Italia, puoi essere sicuro di avere sempre il supporto di cui hai bisogno.</p>
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Il van che fa per te, al TAN che fa per te</h2>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">eDeliver 9 è il van ideale per le consegne a lungo raggio. Grazie alla sua ampia autonomia e al suo vano di carico capiente, eDeliver 9 può trasportare tutto ciò di cui hai bisogno, ovunque tu vada.</p>
             <div class="button">
                 <a class="" href="#form-gamma-2024">
                     <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
@@ -357,8 +342,8 @@
     </section>
     <section class="description">
         <div class="text">
-            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">Scopri i Vantaggi</h2>
-            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">Compila il form in questa pagina e riceverai un preventivo personalizzato per il veicolo commerciale Maxus 2024 che hai scelto.</p>
+            <h2 class="roboto-black" style="font-size: 56px; line-height: 110%; color: var(--main-color);">La scelta giusta per il tuo business</h2>
+            <p class="roboto-regular" style="font-size: 18px; line-height: 160%; color: #475569;">eDeliver 9 è un van sicuro e affidabile. È dotato di una serie di caratteristiche di sicurezza avanzate, tra cui frenata automatica di emergenza e avviso di collisione in avanti.</p>
             <div class="button">
                 <a class="" href="#form-gamma-2024">
                     <p class="roboto-medium" style="font-size: 16px; letter-spacing: 0.5px; line-height: 24px;">Richiedi un Preventivo<i class="fa-solid fa-arrow-right"></i></p>
@@ -366,9 +351,9 @@
             </div>
         </div>
         <div class="gallery">
-            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/maxus-deliver9-04.jpg" alt=""></div>
-            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/img_3968_1f3f1.jpg" alt=""></div>
-            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/whatsapp-image-2023-11-10-at-17-12-36-11_44b8b.jpg" alt=""></div>
+            <div class="image" style="align-self: end;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-36-e1517995000665-scaled.jpg" alt=""></div>
+            <div class="image" style="align-self: start;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-37.jpg" alt=""></div>
+            <div class="image" style="align-self: center;"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2018-mercedes-benz-sprinter-59.jpg" alt=""></div>
         </div>
     </section>
     <section id="form-gamma-2024">
@@ -384,8 +369,7 @@
                 display: none;
             }
         </style>
-    </section>
-    <section id="reason-why" class="reason">
+    </section>    <section id="reason-why" class="reason">
         <div class="row">
             <div class="item"><img src="https://cdnwp.dealerk.com/eed49ed7/uploads/sites/498/2024/03/2021_deliver_9_cruagh_wood.jpg" alt=""></div>
             <div class="item" style="background: var(--main-color); display: flex; flex-direction: column; justify-content: center;">
